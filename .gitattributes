@@ -1,1 +1,3 @@
 *.plt linguist-language=Prolog
+*       text=auto
+*.sh    text eol=lf
