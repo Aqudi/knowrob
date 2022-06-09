@@ -7,6 +7,9 @@ services:
       - 127.0.0.1:27018:27017
     logging:
       driver: "none"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
 
   # the KnowRob container
   knowrob:
@@ -19,7 +22,7 @@ services:
       - KNOWROB_MONGODB_URI=mongodb://127.0.0.1:27018/?appname=knowrob
       - KNOWROB_MONGO_HOST=127.0.0.1
       - KNOWROB_MONGO_PORT=27018
-      - KNOWROB_MONGO_USER=
-      - KNOWROB_MONGO_PASS=
+      - KNOWROB_MONGO_USER=root
+      - KNOWROB_MONGO_PASS=example
     network_mode: host
-    entrypoint: ["/run_knowrob_local.sh"]
+    entrypoint: [ "/run_knowrob_local.sh" ]
