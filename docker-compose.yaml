@@ -1,0 +1,23 @@
+version: '3'
+services:  
+  # mongo:
+  #   image: mongo:4.4.3-bionic
+  #   container_name: mongo_container
+  #   ports:
+  #     - 127.0.0.1:27272:27017
+  #   logging:
+  #     driver: "none"
+
+  ros_kinetic:
+    build:
+      context: .
+    container_name: ros_kinetic
+    # depends_on:
+    #   - 'mongo'
+    # environment:
+    #   - KNOWROB_MONGODB_URI=mongodb://127.0.0.1:27272/?appname=knowrob
+    # network_mode: host
+    # entrypoint: ["/run_knowrob_local.sh"]
+    # volumes:
+    #   - ./knowrob_cloud:/home/ros/src/knowrob_cloud
+    #   - ./prolog:/prolog
