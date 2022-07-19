@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://knowrob.org/kb/knowrob.owl">
         <owl:imports rdf:resource="package://ease_ontology/owl/EASE.owl"/>
-        <owl:imports rdf:resource="package://ease_ontology/owl/EASE-middle.owl"/>
+        <!-- <owl:imports rdf:resource="package://ease_ontology/owl/EASE-middle.owl"/> -->
         <owl:imports rdf:resource="package://ease_ontology/owl/EASE-IO.owl"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2007-2011 by
           Technische Universität München. This work is licensed under
