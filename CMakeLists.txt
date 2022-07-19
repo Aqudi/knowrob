@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(knowrob)
 
-set(SOMA_VERSION "1.1.0")
+set(SOMA_VERSION "current")
 
 # include additional CMake macros
 include("cmake/ontologies.cmake")
@@ -37,11 +37,8 @@ install_prolog_pack(delay
 # copy them into the workspace such the we can load them
 # from a local source at runtime.
 install_ontology(
-	URL		  "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
-	VERSION   "3.32")
-install_ontology(
-	URL		  "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl"
-	VERSION   "1.8")
+	URL		  "http://www.ease-crc.org/ont/DUL.owl"
+	VERSION   "3.34")
 install_ontology(
 	URL       "https://ease-crc.github.io/soma/owl/${SOMA_VERSION}/SOMA.owl"
 	VERSION   "${SOMA_VERSION}")
